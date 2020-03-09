@@ -9,12 +9,8 @@ class Transfer
   end
 
   def valid?
-    if @sender.valid? && @reciever.valid?
-      true
-    else
-      false
-    end
+    @sender.valid? && @receiver.valid? ? true : false
   end
 
-  
+
 end
